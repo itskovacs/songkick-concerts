@@ -1,0 +1,36 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [
+  {name = "kovacs", email = "itskovacs@proton.me"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+]
+dependencies = [
+  "beautifulsoup4~=4.12.3",
+  "requests~=2.31.0"
+]
+description = "Python Songkick crawler to retrieve artist's concerts. No API usage. Notify on Telegram."
+keywords = ["python-crawler", "python songkick", "songkick crawler"]
+license = {file = "LICENSE"}
+name = "songkick-concerts"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "1.0"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/itskovacs/songkick-concerts/issues"
+Documentation = "https://itskovacs.github.io/songkick-concerts"
+Homepage = "https://github.com/itskovacs/songkick-concerts"
+Repository = "https://github.com/itskovacs/songkick-concerts.git"
+
+[tool.flake8]
+ignore = []
+max-line-length = 120
